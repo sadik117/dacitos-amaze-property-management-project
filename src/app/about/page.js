@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, Users, MapPin, Building2, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
-import ServicePartners from '@/components/sections/ServicePartners';
 import TrustedBy from '@/components/sections/TrustedBy';
 
 const fadeUp = (delay = 0) => ({
@@ -57,7 +56,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white text-primary font-bold text-lg shadow-[0_0_30px_rgba(255,255,255,0.25)] hover:shadow-[0_0_50px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 group"
+              className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white text-primary font-bold text-md shadow-[0_0_30px_rgba(255,255,255,0.25)] hover:shadow-[0_0_50px_rgba(255,255,255,0.4)] hover:scale-105 transition-all duration-300 group"
             >
               Get Started With Us
               <span className="w-8 h-8 rounded-full bg-primary flex items-center justify-center group-hover:translate-x-1 transition-transform">
