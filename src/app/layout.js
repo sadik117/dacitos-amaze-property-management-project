@@ -1,20 +1,9 @@
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/providers/LenisProvider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata = {
   title: "Amaze PMS – India's Premier Property Management Company",
@@ -34,12 +23,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
+    <html lang="en">
       <body className="bg-navy text-white antialiased overflow-x-hidden">
         <LenisProvider>
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <ScrollToTop />
         </LenisProvider>
       </body>
     </html>

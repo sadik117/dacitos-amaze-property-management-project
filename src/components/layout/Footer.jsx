@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-navy-mid border-t border-border pt-16 pb-8">
       <div className="container-custom mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 gap-12 mb-12">
           <div>
             <Link href="/" className="inline-block mb-6 bg-white/90 p-2 rounded shadow-lg">
               <img

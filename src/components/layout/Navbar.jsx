@@ -30,9 +30,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'py-3 glass-blue' : 'py-5 bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-3 glass-blue' : 'py-5 bg-transparent'
+        }`}
     >
       <div className="container-custom mx-auto flex items-center justify-between">
         <Link href="/" className="relative z-10 flex items-center gap-3">
@@ -43,16 +42,15 @@ export default function Navbar() {
           />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.path;
             return (
               <Link
                 key={link.name}
                 href={link.path}
-                className={`relative text-sm font-medium transition-colors hover:text-gold ${
-                  isActive ? 'text-white' : 'text-white-muted'
-                }`}
+                className={`relative text-sm font-medium transition-colors hover:text-gold ${isActive ? 'text-white' : 'text-white-muted'
+                  }`}
               >
                 {link.name}
                 {isActive && (
@@ -74,7 +72,7 @@ export default function Navbar() {
         </nav>
 
         <button
-          className="lg:hidden relative z-10 p-2 text-white"
+          className="md:hidden relative z-10 p-2 text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle Menu"
         >
@@ -89,7 +87,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 right-0 bg-navy/95 backdrop-blur-xl border-b border-border p-6 shadow-2xl lg:hidden"
+            className="absolute top-full left-0 right-0 bg-navy/95 backdrop-blur-xl border-b border-border p-6 shadow-2xl md:hidden"
           >
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => {
@@ -99,9 +97,8 @@ export default function Navbar() {
                     key={link.name}
                     href={link.path}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`text-lg font-medium py-2 border-b border-white/5 transition-colors ${
-                      isActive ? 'text-gold' : 'text-white'
-                    }`}
+                    className={`text-lg font-medium py-2 border-b border-white/5 transition-colors ${isActive ? 'text-gold' : 'text-white'
+                      }`}
                   >
                     {link.name}
                   </Link>

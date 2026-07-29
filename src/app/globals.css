@@ -22,15 +22,6 @@
   --radius-pill: 9999px;
 }
 
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html {
   scroll-behavior: auto; 
   -webkit-text-size-adjust: 100%;
@@ -108,6 +99,21 @@ body {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-dark {
+    @apply bg-navy/60 backdrop-blur-md border border-white/5 shadow-lg;
+  }
+
+  /* Custom Scrollbar for overflowing client lists */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-navy rounded-full;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full hover:bg-primary transition-colors;
   }
 
   .glass-blue {
