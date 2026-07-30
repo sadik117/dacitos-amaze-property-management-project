@@ -139,7 +139,7 @@ const approachStages = [
 export default function RecruitmentsPage() {
   return (
     <div className="bg-navy min-h-screen">
-      <div className="relative pt-32 pb-20 overflow-hidden border-b border-border">
+      <div className="relative pt-24 pb-16 overflow-hidden border-b border-border">
         <div className="absolute inset-0 bg-gradient-to-b from-navy via-navy/90 to-navy" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(107,157,253,0.1),transparent_50%)]" />
         
@@ -149,7 +149,7 @@ export default function RecruitmentsPage() {
               <UserPlus size={16} />
               Join Our Excellence
             </div>
-            <h1 className="text-4xl md:text-6xl font-black font-display text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-black font-display text-white mb-6 leading-tight">
               Recruitment <span className="gradient-text-gold">&</span> Strategy
             </h1>
             <p className="text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
@@ -168,7 +168,7 @@ export default function RecruitmentsPage() {
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-gold mx-auto rounded-full"></div>
           </motion.div>
 
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-4xl mx-auto space-y-6">
             <motion.div {...fadeUp(0.1)} className="bg-navy-card rounded-2xl p-8 border border-border hover:border-primary/40 transition-colors">
               <div className="flex items-center gap-4 mb-6 pb-4 border-b border-border/50">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary-light">

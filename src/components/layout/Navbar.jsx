@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: 'Our Clients', path: '/our-clients' },
     { name: 'About Us', path: '/about' },
     { name: 'Careers', path: '/careers' },
+    { name: 'Recruitments', path: '/recruitments' },
     { name: 'Contact Us', path: '/contact' },
   ];
 

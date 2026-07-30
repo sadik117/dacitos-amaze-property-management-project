@@ -37,11 +37,11 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 text-white border-b border-border-blue inline-block pb-1">Menu</h4>
             <ul className="space-y-3">
-              <li><Link href="/" className="text-white-muted hover:text-gold transition-colors">Home</Link></li>
               <li><Link href="/services" className="text-white-muted hover:text-gold transition-colors">Services</Link></li>
               <li><Link href="/our-clients" className="text-white-muted hover:text-gold transition-colors">Our Clients</Link></li>
               <li><Link href="/about" className="text-white-muted hover:text-gold transition-colors">About Us</Link></li>
               <li><Link href="/careers" className="text-white-muted hover:text-gold transition-colors">Careers</Link></li>
+              <li><Link href="/recruitments" className="text-white-muted hover:text-gold transition-colors">Recruitments</Link></li>
               <li><Link href="/contact" className="text-white-muted hover:text-gold transition-colors">Contact Us</Link></li>
             </ul>
           </div>
